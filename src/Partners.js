@@ -61,7 +61,7 @@ export default class Partners extends Component {
                             loading="lazy"
                      />
                     </Stack>
-                    <Stack sx={{justifyContent:"space-between"}} px={"50px"} py={"30px"} backgroundColor={"secondary2.main"} direction={{sm:"column", md:"row"}}>
+                    <Stack sx={{justifyContent:"space-between"}} px={"50px"} py={"30px"} backgroundColor={"bg_color_light.main"} direction={{sm:"column", md:"row"}}>
                         <Typography variant="h3" sx={{color: "text_color_light.main", textAlign:{xs:"center",sm:"center", md:"left"}, maxWidth: {sm:"100%", md:"266px"}}}>Subscribe For Latest Newsletter</Typography>
                         <Paper
                         component="form"

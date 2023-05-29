@@ -33,10 +33,10 @@ const theme = createTheme({
       main: "#FFFFFF"
     },
     bg_color_dark:{
-      main: "#252B42"
+      main: "#929DC9"
     },
     bg_color_light: {
-      main: "#FFFFFF"
+      main: "#4B598D"
     }
   },
   typography:{
