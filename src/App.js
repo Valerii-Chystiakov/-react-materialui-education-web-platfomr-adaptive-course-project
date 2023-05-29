@@ -3,7 +3,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Container } from '@mui/material';
 import Header from './Header';
 import HomeContainer from './HomeContainer';
-import background from "./background.png";
+import background from "./img/background.png";
 import Courses from './Courses';
 import About from './About';
 import Partners from './Partners';
@@ -15,10 +15,10 @@ import Footer from './Footer';
 const theme = createTheme({
   palette: {
     primary:{
-      main: '#FF7B47'
+      main: '#E239FE'
     },
     secondary:{
-      main: '#0D5C63',
+      main: '#929DC9',
     },
     secondary2:{
       main: '#17213C',
@@ -150,7 +150,7 @@ export default function App() {
       {/* <CssBaseline/> */}
         <div>
           <Header/>
-          <Container bgcolor="#FA0000" position="absolute" maxWidth="100%"  sx={{height: "800px", background: {sm: `url(${background}) 100% 100% / cover no-repeat`, xs: `url(${background}) 80% 100% / cover no-repeat`}}} >
+          <Container bgcolor="#FA0000" position="absolute" maxWidth="1440px"   sx={{ background: {sm: `url(${background}) 50% 50% / cover no-repeat`, xs: `url(${background}) 80% 1% / cover no-repeat`}}} >
           <HomeContainer/>
           </Container>
           <Courses/>

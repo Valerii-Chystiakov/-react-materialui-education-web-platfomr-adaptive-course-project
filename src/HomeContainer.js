@@ -14,52 +14,32 @@ import HeadIcon3 from "./img/Head/HeadIcon3.svg"
 export default class HomeContainer extends Component {
   render() {
     return (
-        <Container sx={{px: "0px", pt: 23,  maxWidth:"1046px"}} >
-            <Typography maxWidth="509px" variant="h1" sx={{fontSize: {xs:"44px",sm:"58px"},color:"text_color.main"}}>Finance and Consultancy Solution</Typography>
-            <Typography maxWidth="380px" variant="h4" sx={{pt: 4,color:"text_color2.main"}}>We know how large objects will act, but things on a small scale.</Typography>
-            <Stack direction="row" spacing={2} sx={{mt: 4}}>
-                <Button variant="contained" color="primary" sx={{borderRadius: "37px", py:1, px:4}}>
-                  <Typography variant="btn_text" sx={{color:"text_color_light.main"}}>Get Quote Now</Typography>
-                </Button>
-                <Button variant="outlined" color="secondary" sx={{borderRadius: "37px", py:1, px:4}}>
-                  <Typography variant="btn_text" color="secondary">Learn More</Typography>
-                </Button>
-            </Stack>
-            <Stack direction={{sm:"column", md:"row"}} spacing={4} sx={{mt: 10}}>
-            <Card elevation={1} sx={{width: {xs:"300px",sm:"330px"}}}>
-                <CardContent sx={{px:"40px", py:"35px"}}>
-                    <img
-                        src={`${HeadIcon1}`}
-                        alt={"HeadIcon1"}
-                        loading="lazy"
-                    />
-                    <Typography variant="h3" sx={{color: "text_color.main", mt: 1}}>Environmental Consulting </Typography>
-                    <Typography variant="p" sx={{color: "text_color2.main", mt: 1}}>We focus on ergonomics and meeting you where you work.</Typography>
-                </CardContent>
-            </Card>
-            <Card elevation={1} sx={{width: {xs:"300px",sm:"330px"}}}>
-                <CardContent sx={{px:"40px", py:"35px"}}>
-                    <img
-                        src={`${HeadIcon2}`}
-                        alt={"HeadIcon2"}
-                        loading="lazy"
-                    />
-                    <Typography variant="h3" sx={{color: "text_color.main", mt: 1}}>Finance and consultancy </Typography>
-                    <Typography variant="p" sx={{color: "text_color2.main", mt: 1}}>Just type what's on your mind and we'll get you there.</Typography>
-                </CardContent>
-            </Card>
-            <Card elevation={1} sx={{width: {xs:"300px",sm:"330px"}, background: "#0D5C63"}}>
-                <CardContent sx={{px:"40px", py:"35px"}}>
-                    <img
-                        src={`${HeadIcon3}`}
-                        alt={"HeadIcon3"}
-                        loading="lazy"
-                    />
-                    <Typography variant="h3" sx={{color: "text_color_light.main", mt: 1}}>Financial Services Consulting</Typography>
-                    <Typography variant="p" sx={{color: "text_color_light.main", mt: 1}}>The quick fox jumps over the lazy dog. </Typography>
-                </CardContent>
-            </Card>
-            </Stack>
+        <Container sx={{px: "0px", py: {xs:10,sm:20},  maxWidth:"1046px"}} >
+            <Typography maxWidth="509px" variant="h1" sx={{fontSize: {xs:"44px",sm:"58px"},color:"text_color.main"}}>Increase <Typography variant="span"
+       sx={{fontFamily: "Montserrat",
+       fontWeight: "800",
+       lineHeight: "80px",
+       letterSpacing: "0.2px",
+       fontStyle: "normal",
+       textTransform: "none",
+       fontSize: {xs:"44px",sm:"58px"},color:"secondary.main"}}>
+         your knowledge</Typography> with <Typography variant="span"
+       sx={{fontFamily: "Montserrat",
+       fontWeight: "800",
+       lineHeight: "80px",
+       letterSpacing: "0.2px",
+       fontStyle: "normal",
+       textTransform: "none",
+       fontSize: {xs:"44px",sm:"58px"},color:"primary.main"}}>our education</Typography> platform</Typography>
+            <Typography maxWidth="380px" variant="h4" sx={{pt: 4,color:"text_color2.main"}}>Improve your skills with a list of the best courses on our site.</Typography>
+      <Stack direction={{xs:"column",sm:"row"}} spacing={2} sx={{mt: 4}}>
+          <Button variant="contained" color="primary" sx={{borderRadius: "37px", py:1, px:4}}>
+            <Typography variant="btn_text" sx={{color:"text_color_light.main"}}>Get Started Now</Typography>
+          </Button>
+          <Button variant="outlined" color="secondary" sx={{borderRadius: "37px", py:1, px:4}}>
+            <Typography variant="btn_text" color="secondary">Learn More</Typography>
+          </Button>
+      </Stack>
         </Container>
     )
   }

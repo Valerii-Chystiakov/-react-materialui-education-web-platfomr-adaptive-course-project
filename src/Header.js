@@ -36,7 +36,7 @@ function Header() {
               anchorOrigin={{
                 vertical: "bottom",
                 horizontal: "left"
-              }}
+              }} 
               keepMounted
               transformOrigin={{
                 vertical: "top",
@@ -63,24 +63,28 @@ function Header() {
             </Menu>
           </Box>
           <Typography variant="h3" sx={{ display: "flex", flexGrow: {xs:"1", md: "0"}, mr: 2, color:"text_color.main"}}>
-            Relvise
+            SmartLearn
           </Typography>
-          <Box sx={{pl: 15,  flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{pl: 10,  flexGrow: 1, display: { xs: "none", md: "flex" } }}>
               <Button 
                 onClick={handleCloseNavMenu} sx={{ color: "text_color2.main",my: 2, display: "block", textTransform: "none" }}>
                 <Typography variant="link" >Home</Typography>
               </Button>
               <Button
                 onClick={handleCloseNavMenu} sx={{ color: "text_color2.main",my: 2, display: "block", textTransform: "none" }}>
-              <Typography variant="link">Product</Typography>
+              <Typography variant="link">Courses</Typography>
               </Button>
               <Button
                 onClick={handleCloseNavMenu} sx={{ color: "text_color2.main",my: 2, display: "block", textTransform: "none" }}>
-              <Typography variant="link">Pricing</Typography>
+              <Typography variant="link">About</Typography>
               </Button>
               <Button
                 onClick={handleCloseNavMenu} sx={{ color: "text_color2.main",my: 2, display: "block", textTransform: "none" }}>
-              <Typography variant="link">Contact</Typography>
+              <Typography variant="link">Teachers</Typography>
+              </Button>
+              <Button
+                onClick={handleCloseNavMenu} sx={{ color: "text_color2.main",my: 2, display: "block", textTransform: "none" }}>
+              <Typography variant="link">Contact Us</Typography>
               </Button>
           </Box>
         </Toolbar>
