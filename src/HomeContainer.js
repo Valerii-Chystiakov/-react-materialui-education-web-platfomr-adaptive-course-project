@@ -22,7 +22,8 @@ export default class HomeContainer extends Component {
        letterSpacing: "0.2px",
        fontStyle: "normal",
        textTransform: "none",
-       fontSize: {xs:"44px",sm:"58px"},color:"secondary.main"}}>
+       fontSize: {xs:"44px",sm:"58px"},
+       color:"secondary.main"}}>
          your knowledge</Typography> with <Typography variant="span"
        sx={{fontFamily: "Montserrat",
        fontWeight: "800",
