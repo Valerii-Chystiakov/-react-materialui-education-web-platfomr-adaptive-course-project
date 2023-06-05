@@ -23,10 +23,10 @@ function Header() {
 
 
   return (
-    <AppBar position="absolute" color="transparent" elevation={0} sx={{px:0, width: "100%", mx:"auto"}}>
-      <Container sx={{px:"0px", maxWidth: "1046px"}}>
+    <AppBar position="absolute" color="transparent" elevation={0} sx={{ px: 0, width: "100%", mx: "auto" }}>
+      <Container sx={{ px: "0px", maxWidth: "1046px" }}>
         <Toolbar >
-          <Box sx={{ flexGrow: 1, display: {xs: "flex", md: "none" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton size="large" aria-label="account of current user" aria-controls="menu-appbar" aria-haspopup="true" onClick={handleOpenNavMenu} color="inherit">
               <MenuIcon />
             </IconButton>
@@ -36,7 +36,7 @@ function Header() {
               anchorOrigin={{
                 vertical: "bottom",
                 horizontal: "left"
-              }} 
+              }}
               keepMounted
               transformOrigin={{
                 vertical: "top",
@@ -49,43 +49,43 @@ function Header() {
               }}
             >
               <MenuItem onClick={handleCloseNavMenu}>
-              <Typography textAlign="center" variant='link' sx={{color: "text_color2.main"}}>Home</Typography>
+                <Typography textAlign="center" variant='link' sx={{ color: "text_color2.main" }}>Home</Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
-              <Typography textAlign="center" variant='link' sx={{color: "text_color2.main"}}>Product</Typography>
+                <Typography textAlign="center" variant='link' sx={{ color: "text_color2.main" }}>Product</Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
-              <Typography textAlign="center" variant='link' sx={{color: "text_color2.main"}}>Pricing</Typography>
+                <Typography textAlign="center" variant='link' sx={{ color: "text_color2.main" }}>Pricing</Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
-              <Typography textAlign="center" variant='link' sx={{color: "text_color2.main"}}>Contact</Typography>
+                <Typography textAlign="center" variant='link' sx={{ color: "text_color2.main" }}>Contact</Typography>
               </MenuItem>
             </Menu>
           </Box>
-          <Typography variant="h3" sx={{ display: "flex", flexGrow: {xs:"1", md: "0"}, mr: 2, color:"text_color.main"}}>
+          <Typography variant="h3" sx={{ display: "flex", flexGrow: { xs: "1", md: "0" }, mr: 2, color: "text_color.main" }}>
             SmartLearn
           </Typography>
-          <Box sx={{pl: 10,  flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-              <Button 
-                onClick={handleCloseNavMenu} sx={{ color: "text_color2.main",my: 2, display: "block", textTransform: "none" }}>
-                <Typography variant="link" >Home</Typography>
-              </Button>
-              <Button
-                onClick={handleCloseNavMenu} sx={{ color: "text_color2.main",my: 2, display: "block", textTransform: "none" }}>
+          <Box sx={{ pl: 10, flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+            <Button
+              onClick={handleCloseNavMenu} sx={{ color: "text_color2.main", my: 2, display: "block", textTransform: "none" }}>
+              <Typography variant="link" >Home</Typography>
+            </Button>
+            <Button
+              onClick={handleCloseNavMenu} sx={{ color: "text_color2.main", my: 2, display: "block", textTransform: "none" }}>
               <Typography variant="link">Courses</Typography>
-              </Button>
-              <Button
-                onClick={handleCloseNavMenu} sx={{ color: "text_color2.main",my: 2, display: "block", textTransform: "none" }}>
+            </Button>
+            <Button
+              onClick={handleCloseNavMenu} sx={{ color: "text_color2.main", my: 2, display: "block", textTransform: "none" }}>
               <Typography variant="link">About</Typography>
-              </Button>
-              <Button
-                onClick={handleCloseNavMenu} sx={{ color: "text_color2.main",my: 2, display: "block", textTransform: "none" }}>
+            </Button>
+            <Button
+              onClick={handleCloseNavMenu} sx={{ color: "text_color2.main", my: 2, display: "block", textTransform: "none" }}>
               <Typography variant="link">Teachers</Typography>
-              </Button>
-              <Button
-                onClick={handleCloseNavMenu} sx={{ color: "text_color2.main",my: 2, display: "block", textTransform: "none" }}>
+            </Button>
+            <Button
+              onClick={handleCloseNavMenu} sx={{ color: "text_color2.main", my: 2, display: "block", textTransform: "none" }}>
               <Typography variant="link">Contact Us</Typography>
-              </Button>
+            </Button>
           </Box>
         </Toolbar>
       </Container>

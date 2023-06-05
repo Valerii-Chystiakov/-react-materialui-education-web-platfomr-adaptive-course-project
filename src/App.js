@@ -8,7 +8,7 @@ import Courses from './Courses';
 import About from './About';
 import Partners from './Partners';
 import Teachers from './Teachers';
-import ContactUs from './ContactUs';
+import GetInTouch from './GetInTouch';
 import Footer from './Footer';
 
 
@@ -157,7 +157,7 @@ export default function App() {
           <About/>
           <Partners/>
           <Teachers/>
-          <ContactUs/>
+          <GetInTouch/>
           <Footer/>
         </div>
     </ThemeProvider>
